@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: auto;
+    min-height: 175px;
+    max-width: 1010px;
+    width: auto;
+    background-color: #ab183d;
+    margin: 5px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.heading {
+    padding-top: 40px;
+    padding-right: 200px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+    color: #fff;
+}
+
+.heading .site {
+    text-align: center;
+    font-size: 20px;
+}
+
+.navbar {
+    margin: auto;
+    max-width: 1010px;
+    width: auto;
+    background-color: black;
+    padding: 17px;
+    text-align: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.text1 {
+    max-width: 1010px;
+    width: auto;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.text1 p {
+    margin-top: 20px;
+}
+
+.text1 .p1 {
+    font-size: 20px;
+}
+
+.text1 .p2 {
+    color: red;
+}
+
+.text2 {
+    margin: 20px auto 0 auto;
+    max-width: 1010px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.text2 a {
+    color: blue;
+}
+
+.marquee {
+    max-width: 1010px;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+.marquee a {
+    color: blue;
+}
+
+.cells {
+    max-width: 1010px;
+    width: auto;
+    height: 120px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cells div {
+    margin: 2px;
+    height: 60px;
+    width: 245px;
+    text-align: center;
+}
+
+.cells div a {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.table1, .table2 {
+    max-width: 1010px;
+    width: auto;
+    margin: 50px auto;
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table2 {
+    max-width: 1010px;
+    width: auto;
+    margin: -40px auto 0 auto;
+    list-style-position: inside;
+    display: flex;
+    justify-content: space-around;
+}
+
+.table1 div, .table2 div {
+    width: 315px;
+    border: 2px solid #d2691e;
+}
+
+.table1 li, .table2 li {
+    padding: 10px 0 10px 20px;
+}
+
+.table1 a, .table2 a {
+    color: blue;
+}
+
+.table1 h2, .table2 h2 {
+    height: 35px;
+    text-align: center;
+    background-color: #ab183d;
+    color: white;
+}
+
+.table1 p a, .table2 p a {
+    text-decoration: none;
+    color: darkblue;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.table1 p, .table2 p {
+    text-align: right;
+    padding: 5px 20px;
+}
+
+.table2 table tr td div {
+    margin: 10px;
+}
