@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carImg {
+    width: 200px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: -1;
+}
+
+.overflow {
+    background-color: aqua;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.carImg2 {
+    width: 500px;
+    opacity: 0.5;
+}
+
+.transition {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    transition: width 2s, height 2s, border 2s;
+    -webkit-transition: width 2s, height 2s, border 2s;
+    -moz-transition: width 2s, height 2s, border 2s;
+    -ms-transition: width 2s, height 2s, border 2s;
+    -o-transition: width 2s, height 2s, border 2s;
+}
+
+.transition:hover {
+    width: 250px;
+    height: 250px;
+}
+
+.disIn {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    display: inline;
+}
+
+.main {
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.sub {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 100px;
+}
