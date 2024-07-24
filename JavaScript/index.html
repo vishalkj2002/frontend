@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+        * {
+            font-family: "Ubuntu";
+        }
+    </style>
+</head>
+<body>
+    <!-- Variable -->
+    <p id="para">This is a paragraph.</p>
+    <h2 id="heading">This is a h2 heading.</h2>
+    <h1 id="name"></h1>
+    <h2 id="comp"></h2>
+
+    <script>
+        var a = 10;
+        let b = 20;
+        const c = 30;
+
+        console.log(a);
+        console.log("Hi, This message is displayed using JavaScript");
+
+        let paragraph = document.getElementById("para");
+        console.log(paragraph);
+        console.log(typeof(a));
+        // To modify html
+        document.getElementById("heading").innerHTML = "Hello, World!";
+        // let heading = document.getElementById("heading");
+        // heading.innerHTML = "Hello, World!"
+
+        let newName = document.getElementById("name");
+        newName.innerHTML = "Vishal Kumar Jangid";
+
+        // alert, window.alert and document.write
+        // alert("Hello");
+        // window.alert("This is also an alert");
+        // document.write("This is a write"); // directly writes to html
+
+        let num1 = 10;
+        let num2 = 20;
+        let sum = num1 + num2;
+        let heading = document.getElementById("heading");
+        // heading.innerHTML = `Sum is ${sum}`;
+        heading.innerHTML = `${num1} + ${num2} = ${num1 + num2}`;
+
+        let comp = document.getElementById("comp");
+        comp.innerHTML = num1 > num2;
+    </script>
+</body>
+</html>
