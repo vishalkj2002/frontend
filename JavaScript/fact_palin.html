@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add form data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input id="inputBox" type="text" style="margin: 10px; font-size: 20px;" placeholder="Enter a number">
+        <br>
+        <h2 id="fact" style="margin: 10px; display: none;"></h2>
+        <h2 id="palin" style="margin: 10px; display: none;"></h2>
+        <button style="width: 100px; height: 30px; margin: 10px; font-size: 20px;" onclick="factPalin()">Calculate</button>
+    </div>
+    
+    <script>
+        let inputBox = document.getElementById("inputBox");
+        function factPalin() {
+            let number = parseInt(inputBox.value);
+            let factorial = 1;
+            let temp = number;
+            let sum = 0;
+            let rem = 0;
+            for (let i = number; i > 0; i--)
+                factorial *= i;
+            while (number > 0) {
+                rem = number % 10;
+                sum = sum * 10 + rem;
+                number = Math.floor(number / 10);
+            }
+            let ans = (temp == sum);
+            let head1 = document.getElementById("fact");
+            let head2 = document.getElementById("palin");
+            head1.style.display = "block";
+            head2.style.display = "block";
+            head1.innerHTML = `Factorial: ${factorial}`;
+            head2.innerHTML = `Palindrome: ${ans}`;
+        }
+    </script>
+</body>
+</html>
