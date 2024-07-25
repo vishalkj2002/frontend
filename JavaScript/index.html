@@ -8,49 +8,104 @@
         @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
         * {
             font-family: "Ubuntu";
+            background-color: black;
+            color: white;
         }
     </style>
 </head>
 <body>
     <!-- Variable -->
-    <p id="para">This is a paragraph.</p>
+    <!-- <p id="para">This is a paragraph.</p>
     <h2 id="heading">This is a h2 heading.</h2>
     <h1 id="name"></h1>
-    <h2 id="comp"></h2>
+    <h2 id="comp"></h2> -->
+
+    <!-- Operators -->
+
 
     <script>
-        var a = 10;
-        let b = 20;
-        const c = 30;
+        // var a = 10;
+        // let b = 20;
+        // const c = 30;
 
-        console.log(a);
-        console.log("Hi, This message is displayed using JavaScript");
+        // console.log(a);
+        // console.log("Hi, This message is displayed using JavaScript");
 
-        let paragraph = document.getElementById("para");
-        console.log(paragraph);
-        console.log(typeof(a));
-        // To modify html
-        document.getElementById("heading").innerHTML = "Hello, World!";
+        // let paragraph = document.getElementById("para");
+        // console.log(paragraph);
+        // console.log(typeof(a));
+        // // To modify html
+        // document.getElementById("heading").innerHTML = "Hello, World!";
+        // // let heading = document.getElementById("heading");
+        // // heading.innerHTML = "Hello, World!"
+
+        // let newName = document.getElementById("name");
+        // newName.innerHTML = "Vishal Kumar Jangid";
+
+        // // alert, window.alert and document.write
+        // // alert("Hello");
+        // // window.alert("This is also an alert");
+        // // document.write("This is a write"); // directly writes to html
+
+        // let num1 = 10;
+        // let num2 = 20;
+        // let sum = num1 + num2;
         // let heading = document.getElementById("heading");
-        // heading.innerHTML = "Hello, World!"
+        // // heading.innerHTML = `Sum is ${sum}`;
+        // heading.innerHTML = `${num1} + ${num2} = ${num1 + num2}`;
 
-        let newName = document.getElementById("name");
-        newName.innerHTML = "Vishal Kumar Jangid";
+        // let comp = document.getElementById("comp");
+        // comp.innerHTML = num1 > num2;
 
-        // alert, window.alert and document.write
-        // alert("Hello");
-        // window.alert("This is also an alert");
-        // document.write("This is a write"); // directly writes to html
+        // Operators
+        // let a = 10;
+        // a += 5;
+        // a -= 5;
+        // a %= 5;
 
-        let num1 = 10;
-        let num2 = 20;
-        let sum = num1 + num2;
-        let heading = document.getElementById("heading");
-        // heading.innerHTML = `Sum is ${sum}`;
-        heading.innerHTML = `${num1} + ${num2} = ${num1 + num2}`;
+        // Logical Operator
+        // let c = a > 20 && a < 100;
+        // console.log(c);
+        // let d = a > 20 || a < 100;
+        // console.log(d);
+        // let e = !(a > 20);
+        // console.log(e);
 
-        let comp = document.getElementById("comp");
-        comp.innerHTML = num1 > num2;
+        // Bitwise Operator
+        // let a = 10; // 1010
+        // let b = 9; // 1001
+        // console.log(a & b); // 1000 8
+
+        // let c = 15; // 1111
+        // let d = 14; // 1110
+        // console.log(c & d); // 1110 14
+
+        let a = 15; // 1111
+        let b = 14; // 1110
+        console.log(a | b); //1111 15
+
+        let c = 19; // 10011
+        let d = 21; // 10101
+        console.log(c & d); // 10001 17
+        console.log(c | d); // 10111 23
+
+        let e = 10; // 1010
+        let f = 9; // 1001
+        console.log(e ^ f); // 0011 3
+
+        let g = 13; // 1101
+        let h = 16; // 10000
+        console.log(g ^ h); // 11101 29
+
+        // Left shift
+        let i = 13;
+        console.log(i << 2); // 1101 --> 11010 --> 110100
+        let j = 9;
+        console.log(j << 3); // 1001 --> 10010 --> 100100 --> 1001000
+
+        // Right shift
+        let k = 15;
+        console.log(k >> 2); // 1111 --> 11
     </script>
 </body>
 </html>
