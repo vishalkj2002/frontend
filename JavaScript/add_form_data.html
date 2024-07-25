@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add form data</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="addForm">
+        <input id="inputBox1" style="margin: 10px; font-size: 20px;" type="number" placeholder="Enter first number">
+        <br>
+        <input id="inputBox2" style="margin: 10px; font-size: 20px;" type="number" placeholder="Enter second number">
+        <br>
+        <h2 id="sum" style="margin: 10px;"></h2>
+        <button style="width: 100px; height: 30px; margin: 10px; font-size: 20px;" onclick="add()">Add</button>
+    </div>
+    
+    <script>
+        let inputBox1 = document.getElementById("inputBox1");
+        let inputBox2 = document.getElementById("inputBox2");
+        let sum = document.getElementById("sum");
+        function add() {
+            let first = parseInt(inputBox1.value);
+            let second = parseInt(inputBox2.value);
+            sum.innerHTML = first + second;
+        }
+    </script>
+</body>
+</html>
