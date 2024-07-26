@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong Number and Leap Year</title>
+    <style>
+        h1 {
+            margin: 10px;
+        }
+
+        input {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        button {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        h2 {
+            display: none;
+            margin: 10px;
+        }
+
+        .leap {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="armstrong">
+        <h1>Armstrong Number</h1>
+        <input id="inputBox1" type="text" placeholder="Enter three digit number"><br>
+        <h2 id="head1"></h2>
+        <button onclick="armstrong()">Check</button>
+    </div>
+
+    <div class="leap">
+        <h1>Leap Year</h1>
+        <input id="inputBox2" type="text" placeholder="Enter a year"><br>
+        <h2 id="head2"></h2>
+        <button onclick="leapYear()">Check</button>
+    </div>
+
+    <script>
+        function armstrong() {
+            let inputBox1 = document.getElementById("inputBox1");
+            let head1 = document.getElementById("head1");
+            let number = parseInt(inputBox1.value);
+            let temp = number;
+            let sum = 0, rem = 0;
+            while (number > 0) {
+                rem = number % 10;
+                sum += Math.pow(rem, 3);
+                number = Math.floor(number / 10);
+            }
+            if (temp == sum)
+                head1.innerHTML = `${temp} is an armstrong number`;
+            else
+                head1.innerHTML = `${temp} is not an armstrong number`;
+            head1.style.display = "block";
+        }
+
+        function leapYear() {
+            let inputBox2 = document.getElementById("inputBox2");
+            let head2 = document.getElementById("head2");
+            let year = parseInt(inputBox2.value);
+            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0))
+                head2.innerHTML = `${year} is a leap year`;
+            else
+                head2.innerHTML = `${year} is not a leap year`;
+            head2.style.display = "block";
+        }
+    </script>
+</body>
+</html>
