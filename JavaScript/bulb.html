@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <img id="image" src="/JavaScript/pic_bulboff.gif" alt="">
+    <button onclick="bulbOff()">Bulb off</button>
+    <button onclick="bulbOn()">Bulb on</button>
+
+    <script>
+        let image1 = document.getElementById("image");
+        function bulbOff() {
+            image1.src = "/JavaScript/pic_bulboff.gif";
+        }
+        function bulbOn() {
+            image1.src = "/JavaScript/pic_bulbon.gif";
+        }
+    </script>
+</body>
+</html>
