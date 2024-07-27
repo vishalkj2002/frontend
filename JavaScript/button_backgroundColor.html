@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Background Color</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .buttons {
+            background-color: white;
+            text-align: center;
+            width: 50vw;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+
+        button {
+            margin: 25px;
+            font-size: 25px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <h1>Click Buttons to change the background color</h1>
+        <button id="orangeBtn" onclick="orange()">Orange</button>
+        <button id="redBtn" onclick="red()">Red</button>
+        <button id="greenBtn" onclick="green()">Green</button>
+        <button id="blackBtn" onclick="black()">Black</button>
+        <button id="blackBtn" onclick="blue()">Blue</button>
+    </div>
+
+    <script>
+        function orange() {
+            let orangeBtn = document.getElementById("orangeBtn");
+            document.body.style.backgroundColor = "orange";
+        }
+        function red() {
+            let redBtn = document.getElementById("redBtn");
+            document.body.style.backgroundColor = "red";
+        }
+        function green() {
+            let greenBtn = document.getElementById("greenBtn");
+            document.body.style.backgroundColor = "green";
+        }
+        function black() {
+            let blackBtn = document.getElementById("blackBtn");
+            document.body.style.backgroundColor = "black";
+        }
+        function blue() {
+            let blueBtn = document.getElementById("blueBtn");
+            document.body.style.backgroundColor = "blue";
+        }
+    </script>
+</body>
+</html>
