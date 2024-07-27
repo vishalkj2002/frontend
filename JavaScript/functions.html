@@ -29,10 +29,30 @@
         // }
 
         // Arrow function
-        let abc = () => {
-            console.log("This is arrow function");
+        // let abc = () => {
+        //     console.log("This is arrow function");
+        // }
+        // abc();
+
+        // Passing arguments in functions
+        // let a = 40;
+
+        // abc(a);
+        // function abc(ab) {
+        //     console.log(`Argument Value: ${ab}`);
+        // }
+
+        // Callback functions
+        function abc(callBack) {
+            console.log("This is a normal function");
+            callBack()
         }
-        abc();
+
+        function pqr() {
+            console.log("This is a callBack function");
+        }
+
+        abc(pqr)
     </script>
 </body>
 </html>
