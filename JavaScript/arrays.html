@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrays</title>
+    <title>Arrs</title>
 </head>
 <body>
     <script>
-        let array = [11, 100, 34, 4, 55];
-        let max = array[0];
-        for (let i = 0; i < array.length; i++)
-            if (array[i] > max)
-                max = array[i];
+        let arr = [11, 100, 34, 4, 55];
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++)
+            if (arr[i] > max)
+                max = arr[i];
         console.log(max);
 
-        array.forEach((a, b) => {
-            console.log(`Array value is ${a} with index ${b}`);
+        arr.forEach((element, index, array) => {
+            // console.log(`Array value is ${element} with index ${index}`);
+            console.log(array);
         })
     </script>
 </body>
