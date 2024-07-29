@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Assignment</title>
+</head>
+<body>
+    <script>
+        const array = [1, 2, 3, 4, 5, 100, 95, 90, 85, 80, 10, 20, 30, 40, 50, 11, 22, 33, 44, 55];
+        // Minimum and maximum
+        let min = array[0];
+        let max = array[0];
+        console.log(array);
+        for (let i = 0; i < array.length; i++) {
+            if (max < array[i])
+                max = array[i];
+            else if (min > array[i])
+                min = array[i];
+        }
+        console.log(`Minimum element is ${min}`);
+        console.log(`Maximum element is ${max}`);
+
+        // Ascending and Descending
+        let ascArray = array.slice();
+        for (let i = 0; i < ascArray.length; i++) {
+            for (let j = 0; j < ascArray.length - 1; j++) {
+                if (ascArray[j] > ascArray[j + 1]) {
+                    let temp = ascArray[j];
+                    ascArray[j] = ascArray[j + 1];
+                    ascArray[j + 1] = temp;
+                }
+            }
+        }
+        console.log("Array in ascending order:")
+        console.log(ascArray);
+
+        let desArray = array.slice();
+        for (let i = 0; i < desArray.length; i++) {
+            for (let j = 0; j < desArray.length - 1; j++) {
+                if (desArray[j] < desArray[j + 1]) {
+                    let temp = desArray[j];
+                    desArray[j] = desArray[j + 1];
+                    desArray[j + 1] = temp;
+                }
+            }
+        }
+        console.log("Array in descending order")
+        console.log(desArray);
+    </script>
+</body>
+</html>
