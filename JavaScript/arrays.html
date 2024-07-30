@@ -3,21 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrs</title>
+    <title>Arrays</title>
 </head>
 <body>
     <script>
-        let arr = [11, 100, 34, 4, 55];
-        let max = arr[0];
-        for (let i = 0; i < arr.length; i++)
-            if (arr[i] > max)
-                max = arr[i];
-        console.log(max);
+        // let arr = [11, 100, 34, 4, 55];
+        // let max = arr[0];
+        // for (let i = 0; i < arr.length; i++)
+        //     if (arr[i] > max)
+        //         max = arr[i];
+        // console.log(max);
 
-        arr.forEach((element, index, array) => {
-            // console.log(`Array value is ${element} with index ${index}`);
-            console.log(array);
+        // arr.forEach((element, index, array) => {
+        //     // console.log(`Array value is ${element} with index ${index}`);
+        //     console.log(array);
+        // })
+
+        // Array Map
+        let array = [1, 2, 3, 4, 5];
+        let d = array.forEach((element) => {
+            return element + 5;
         })
+        console.log(d);
+
+        let c = array.map((a, b, g) => {
+            return a + 5;
+        })
+
+        console.log(c);
+
+        array.map(abc);
+        function abc(a, b) {
+            console.log(b);
+        }
+
+        array.push(100);
+        console.log(array);
+
+        let newArray = array.slice();
+        console.log(newArray);
+
+        newArray.splice(3, 0, 10, 20, 30);
+        console.log(newArray);
     </script>
 </body>
 </html>
