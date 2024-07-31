@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <!-- <h1>The Document Object</h1>
+    <!-- <h2>The getElementByClassName() Method</h2>
+
+    <p>Change the text of the first element with class="example"</p>
+
+    <div class="example">Element 1</div>
+    <div class="example">Element 2</div>
+    <div class="example">Element 1</div>
+    <div class="example">Element 2</div> --> -->
+
+    <h1>The Element Object</h1>
+    <h2>The addEventListener() Method</h2>
+
+    <p>Execute a function when a user clicks on a button:</p>
+
+    <button id="myBtn">Try it</button>
+
+    <h1 id="demo"></h1>
+
+    <script>
+        // const collection = document.getElementsByClassName("example");
+        // console.log(collection);
+        // collection[3].innerHTML = "Hello, World!";
+
+        const element = document.getElementById("myBtn");
+        element.addEventListener("click", myFunction);
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hi";
+        }
+    </script>
+</body>
+</html>
