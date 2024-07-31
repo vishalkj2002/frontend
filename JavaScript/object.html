@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        // let a = {
+        //     key: "abc",
+        //     value: "yt",
+        //     key: "abcd"
+        // }
+        // console.log(a);
+
+        // console.log(a.key);
+
+        // let objectname1 = {
+        //     abc: () => {
+        //         console.log("Hi");
+        //     }
+        // }
+        // objectname1.abc();
+        // console.log(objectname1);
+
+        // const person = {
+        //     fname: "John",
+        //     lname: "Doe",
+        //     age: 25
+        // };
+
+        // let txt = "";
+        // for (let x in person) {
+        //     console.log(x);
+        //     txt += person[x] + " ";
+        // }
+
+        // document.getElementById("demo").innerHTML = txt;
+
+        const person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.age = 50;
+        person.eyeColor = "black";
+
+        document.getElementById("demo").innerHTML = person.firstName + " is " + person.age + " years old.";
+    </script>
+</body>
+</html>
