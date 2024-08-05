@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises</title>
+</head>
+<body>
+    <button id="btn">Promise</button>
+    <button id="btn2">Reject</button>
+
+    <script>
+        // let a = new Promise((resolve, reject) => {
+        //     resolve(`Executed`);
+        // });
+
+        // // a.then((ab) => {
+        // //     console.log(ab);
+        // //     alert(ab);
+
+        // // }).catch((abc) =>{
+        // //     console.log(abc);
+        // // })
+
+        // // Multiple then
+        // a.then((ab) => {
+        //     console.log(ab);
+        //     return "First Then";
+        // }).then((c) => {
+        //     console.log(`${c} inside Second Then`);
+        // });
+
+        const btn = document.getElementById("btn");
+        let a = new Promise((resolve, reject) => {
+            btn.addEventListener("click", () => {
+                resolve("Execute");
+            });
+            btn2.addEventListener("click", () => {
+                reject("Fail");
+            });
+        });
+        
+    </script>
+</body>
+</html>
